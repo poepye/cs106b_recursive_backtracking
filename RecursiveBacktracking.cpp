@@ -8,7 +8,6 @@ bool isMeasurable(int target, Vector<int>& weights) {
 	for (int i = 0; i< weights.size(); i++)
 		right += weights[i];
 	if (target == right) return true; // base case
-	if (right == 0) return false;
 
 	int len = weights.size();
 	while (len > 0) {
